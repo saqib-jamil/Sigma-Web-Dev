@@ -1,0 +1,3 @@
+If u want to use Z-Index then U need to specificy the position property from Static to Relative.
+
+Absolute will find the nearest poisitioned parent element.

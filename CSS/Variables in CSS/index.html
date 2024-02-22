@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables in CSS</title>
+    <style>
+      :root {
+        --color:  blue;
+        --font:  bolder;
+        --size: 40px;
+      }
+      ul{
+         display: flex;
+      }
+      li{
+         list-style-type: none;
+         padding: 20px;
+         background-color: aqua;
+      }
+      section{
+         background-color: var(--color);
+         color: aliceblue;
+         height: 70px;
+         text-align: center;
+         padding: 20px;
+      }
+      p{
+        font-weight : var(--font);
+        font-size: var(--size);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+            natus quod quasi.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOX CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 
+        a:visited{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: blue;
+            color: white;
+        }
+        a:focus{
+            background-color: red;
+        } */
+      /*ALL FIRST P CHILD WILL BE COLORED AS GREEN  */
+      /* p:first-child{
+            background-color: green;
+        }
+        div > p{
+            background-color: aqua;
+        }
+
+        div p {
+            color: blueviolet;
+        }
+
+        */
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+
+        div{
+            background-color: antiquewhite;
+        }
+        .one{
+            border: 2px solid red;
+            height: 100px;
+            margin: 30px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .two{
+            border: 2px solid gray;
+            height: 100px;
+            margin: 30px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+ <div class="main">
+        <p>This is First Para</p>
+        <p>This is Second Para</p>
+    </div>
+
+    <a href="http://www.facebook.com">FaceBook</a>
+ -->
+
+    <div class="one">
+      <p>One Para</p>
+    </div>
+    <div class="two">Two Para</div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* IF THE WIDTH IS SET THN MARGIN AUTO PROPERTY WILL CENTER THE DIV  */
+
+.nav{
+    background-color: aquamarine;
+    width: 80vw;
+    margin: auto;
+    height: 20vh;
+    
+}
+.main{
+    background-color: aquamarine;
+    width: 80vw;
+    margin: 20px auto;
+    height: 70vh;
+}

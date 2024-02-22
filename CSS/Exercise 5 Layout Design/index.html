@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: sticky;
+        top: 0%;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+        color: chocolate;
+      }
+      li {
+        list-style-type: none;
+        padding: 20px;
+      }
+      main {
+        background-color: darkgoldenrod;
+        text-align: center;
+      }
+      .one {
+        margin: 40px;
+        background-color: black;
+        height: 50vh;
+        width: 20vw;
+        display: inline-block;
+      }
+      .two {
+        display: inline-block;
+        margin: 40px;
+        background-color: black;
+        height: 50vh;
+        width: 20vw;
+      }
+      .content {
+        background-color: aqua;
+        border: 2px solid black;
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      footer {
+        background-color: burlywood;
+        height: 40vh;
+        padding: 1px;
+      }
+      .gola{
+        background-color: blue;
+        height: 20px;
+        width: 20px;
+        position: fixed;
+        right: 2%;
+        top: 60%;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="one"></div>
+      <div class="two"></div>
+
+      <div class="content">
+        <p>Welcome to Sigma Web Dev</p>
+      </div>
+      <div class="gola"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

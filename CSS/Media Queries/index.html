@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        
+
+        /* 0 - 600 PX */
+
+        @media only screen and (max-width:600px) {
+            .mob{
+                background-color: blue;
+                font-size: 2em;
+                text-align: center;
+                padding-top: 20px;
+                color: white;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .bgScreen{
+                background-color: brown;
+                font-size: 2em;
+                text-align: center;
+                padding-top: 20px;
+                color: white;
+            }
+        }
+
+        /* IS SA OOPER AND IS SA NECHA wala scnz */
+        @media only screen and (min-width:601px) and (max-width:1199px) {
+            .tablet{
+                background-color: rgb(78, 91, 110);
+                font-size: 2em;
+                text-align: center;
+                padding-top: 20px;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mob">
+       <p>This is  mobile scree</p>
+    </div>
+    <div class="tablet">
+        <p>This is  tablet scree</p>
+     </div>
+     <div class="bgScreen">
+        <p>This is  desktop scree</p>
+     </div>
+    
+</body>
+</html>

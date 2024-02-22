@@ -1,0 +1,2 @@
+box sizing border box includes height of border, content, padding.
+2 elemets ki margin collapse ho rhi thn wohi margin lgaa gi jo max ho gi. thats called margin collapse.
