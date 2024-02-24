@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transforme MasterClass</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100vw;
+        height: 70vh;
+        border: 2px solid black;
+      }
+      .item1 {
+        border: 2px solid black;
+        background-color: aqua;
+        height: 100px;
+        width: 80px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(65deg);
+      }
+      .item2 {
+        border: 2px solid black;
+        background-color: aqua;
+        height: 100px;
+        width: 80px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(40%);
+      }
+      .item3 {
+        border: 2px solid black;
+        background-color: aqua;
+        height: 100px;
+        width: 80px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: skewY(40deg);
+      }
+      .item4 {
+        border: 2px solid black;
+        background-color: aqua;
+        height: 100px;
+        width: 80px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(40deg);
+        transform-origin: 80% 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="item item1">Box One</div>
+      <div class="item item2">Box Two</div>
+      <div class="item item3">Box Three</div>
+      <div class="item item4">Box Four</div>
+    </div>
+  </body>
+</html>
