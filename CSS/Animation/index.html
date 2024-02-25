@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: brown;
+            width: 100vw;
+            height: 60vh;
+        }
+        .box{
+            background-color: antiquewhite;
+            width: 40px;
+            height: 60px;
+            animation-name: myAniation;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            /* animation-direction: alternate; */
+            /* animation-play-state: paused; */
+
+            /* Shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: myAniation 3s ease-in 1s infinite  forwards,
+                        myStyle2 3s ease-in 1s 1;
+        }
+        @keyframes myAniation {
+            from{
+                background-color: black;
+            }
+            to{
+                transform: translateX(20vw);
+            }
+        }
+        @keyframes myStyle2{
+            0%{
+                transform: rotate(90deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(45deg);
+            }
+            75%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
