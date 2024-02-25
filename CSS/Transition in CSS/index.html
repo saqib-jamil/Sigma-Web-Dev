@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        .parent{
+            width: 100vw;
+            background-color: antiquewhite;
+            height: 60vh;
+        }
+        .box{
+            background-color: aqua;
+            width: 10vw;
+            height: 15vh;
+           
+        }
+        .box:hover{
+            /* transition-property: transform;
+            transition-duration: 3s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out; */
+            
+            /* sHORTHAND */
+            
+            transition: all 3s ease-in 0s;
+            transform: translateX(50vw) translateY(30vh);
+            background-color: blue ; 
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="parent">
+            <div class="box myStyle"></div>
+        </div>
+    </div>
+</body>
+</html>
