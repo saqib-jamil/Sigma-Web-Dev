@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Exercise</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        color: coral;
+      }
+      li {
+        list-style-type: none;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+      }
+      .img {
+        width: 10vw;
+      }
+      .items {
+        background-color: #f9f9f9;
+        width: 18vw;
+        height: 20vh;
+        text-align: center;
+      }
+      .mainClass {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+      }
+      /* .mainBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+      button {
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        transform: translateY(30px);
+        font-size: 0.7em;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      .blue {
+        background-color: #00b6d1;
+        color: white;
+      }
+      .green {
+        background-color: #5cb85c;
+        color: white;
+      }
+      h3 {
+        padding-top: 10px;
+      }
+      p {
+        padding-top: 10px;
+        font-size: 0.6em;
+      }
+      .h3Eng {
+        padding-bottom: 10%;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      .tagLine {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      .para {
+        display: flex;
+        justify-content: center;
+      }
+      .para p {
+        text-align: center;
+        font-size: 1.7em;
+        width: 60vw;
+        padding-top: 30px;
+      }
+      .headBtn {
+        display: flex;
+        justify-content: center;
+      }
+      .imgTxt {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10%;
+        padding-left: 18%;
+        padding-bottom: 5%;
+      }
+      .myImg {
+        width: 50px;
+      }
+      small {
+        padding-top: 18px;
+      }
+      .cont {
+        font-size: 2em;
+      }
+      .flexClass {
+        display: flex;
+        justify-content: center;
+      }
+      @media screen and (max-width: 1107px) {
+        .mainClass {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .items {
+          background-color: #f9f9f9;
+          width: 50vw;
+          height: 20vh;
+          margin: 0 auto;
+          text-align: center;
+          border-radius: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <img class="img" src="img/UE-Logo-1.webp" alt="" srcset="" />
+        </span>
+        <ul>
+          <li>
+            <span>Products</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <span>Pricing</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <span>Resources</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <span>About Usx</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <span>Security and Compliance</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <img src="img/Lang.png" alt="" srcset="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mainBody">
+      <section class="content">
+        <section class="tagLine">
+          <h1>Download UltraEdit for Windows</h1>
+          <img src="./img/Reviews.png" alt="" srcset="" />
+        </section>
+        <section class="para">
+          <p>
+            Download and try UltraEdit before you buy it! This download includes
+            the full Windows version of the text editor.
+          </p>
+        </section>
+        <section class="headBtn">
+          <button class="blue">Download MAC or Linux Version</button>
+        </section>
+      </section>
+
+      <section>
+        <section class="imgTxt">
+          <img class="myImg" src="./img/UE_logo_icon_white.png" alt="" />
+          <h3 class="cont">Download UltraEdit</h3>
+          <small> v2023.2(released 2023/12/15) | Hotfix </small>
+        </section>
+        <section class="flexClass">
+          <section class="mainClass">
+            <div class="items item1">
+              <h3 class="h3Eng">English</h3>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item2">
+              <h3>中國</h3>
+              <p>Traditional Chinese</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item3">
+              <h3>Deutsch</h3>
+              <p>German</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item4">
+              <h3>Italiano</h3>
+              <p>Italian</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item5">
+              <h3>Español</h3>
+              <p>Spanish</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item6">
+              <h3>français</h3>
+              <p>French</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item7">
+              <h3>Português brasileiro</h3>
+              <p>Brazilian Portuguese</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item8">
+              <h3>日本</h3>
+              <p>Japanese</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item9">
+              <h3>한국어</h3>
+              <p>Korean</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+            <div class="items item10">
+              <h3>中国</h3>
+              <p>Chinese</p>
+              <button class="blue">Download 32 Bit</button>
+              <button class="green">Download 64 Bit</button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
