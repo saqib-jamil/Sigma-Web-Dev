@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce Animation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        background-color: blue;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+      }
+      .child {
+        border-radius: 50px;
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        align-self: last baseline;
+        /* margin-bottom: 2px; */
+        position: relative;
+        left: 0;
+        animation: onXAxis 3s linear infinite,
+                    onYAxis 1s ease-out infinite alternate;
+      }
+      @keyframes onXAxis {
+        from {
+          left: 0;
+        }
+
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes onYAxis {
+        from {
+          bottom: 0;
+        }
+
+        to {
+          bottom: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
