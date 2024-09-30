@@ -1,6 +1,6 @@
 //  FOR LOOP
 
-let a=1
+let a = 1
 
 for (let i = a; i <= 10; i++) {
     console.log(i)
@@ -16,8 +16,8 @@ while (a <= 10) {
 //  FOR IN LOOP (used to get keys of the obj)
 
 let myObj = {
-    name : "Saqib",
-    program : "BSCS",
+    name: "Saqib",
+    program: "BSCS",
     reg: 54438
 }
 
@@ -27,7 +27,7 @@ for (const key in myObj) {
         const val = myObj[key];
         console.log(`Thats the key ${key} of our obj`)
         console.log(`Thats the value ${val} of our obj`)
-        
+
     }
 }
 
@@ -35,12 +35,12 @@ for (const key in myObj) {
 //  FOR OF mainly use for String, Array
 
 let myName = "SAQIB"
- for (const element of myName) {
+for (const element of myName) {
     console.log(element)
- }
+}
 
- let myArr = ["City","Pak",1]
+let myArr = ["City", "Pak", 1]
 
- for (const element of myArr) {
+for (const element of myArr) {
     console.log(element)
- }
+}
