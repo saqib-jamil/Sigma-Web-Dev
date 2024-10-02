@@ -28,3 +28,16 @@ let g = document.querySelectorAll(".box").forEach(e=>{
     console.log(e)
 })
 
+//  Insert Method
+let newEle = document.createElement("div")
+newEle.setAttribute("class","myAttr")
+newEle.innerHTML = "Geo Murshad"
+document.body.firstElementChild.before(newEle)
+
+let ele = document.querySelector(".myAttr")
+ele.insertAdjacentHTML("afterbegin","<br> Heloo new HTML inserted</br>")
+
+let aa = document.querySelector(".con")
+console.log(aa.classList)
+aa.classList.add("SAQIB")
+console.log(aa.classList)

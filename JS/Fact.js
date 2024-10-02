@@ -23,7 +23,7 @@ for (let i=j; i>1; i--) {
 
 console.log(`The Factorial of ${j} is ${result1}`)
 
-// ARRAY LOOP MAKING METHOD
+// ARRAY FROM TO MAKE AN ARRAY
 let myFact =(numb)=>{
     let a =Array.from(Array(numb+1).keys())
     console.log(a.slice(1))
