@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Web</title>
+    <style>
+        .alpha{
+            display: flex;
+            justify-content: space-between;
+            width: 40vw;
+            border: 2px solid black;
+            border-radius: 2%;
+            padding: 20px;
+        }
+        .txt{
+            display: flex;
+            gap: 20px;
+            align-items: end;
+        }
+        .title{
+            position: relative;
+            right: 50%;
+            align-self: self-start;
+        }
+        .duration{
+            position: absolute;
+            left: 12%;
+            top: 14%;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 0.8em;
+            background-color: black;
+            color: white;
+        }
+        .cName, .views , .old{
+            position: relative;
+            right: 85%; 
+            bottom: 5%;
+        } 
+    </style>
 </head>
 <body>
-    
+    <div class="alpha">
+        <div class="img">
+            <img src="https://i.ytimg.com/vi/WYazkpCQNQw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB3sCLVtWu37WvE7Oghfu9-uBkRgw" alt="" srcset="">
+        </div>
+        <div class="txt">
+            <h4 class="title">JS EX-12</h4>
+            <p class="cName">Harry</p>
+            <p class="duration">12:12</p>
+            <p class="views">12k</p>
+            <p class="old">2 months</p>
+        </div>
+    </div>
     <div class="main">
 
     </div>
