@@ -6,57 +6,25 @@ let addCard = () => {
 
     let a = userInput()
 
-    let newDiv = document.createElement("div")
+    let html = `<div class="alpha">
+    <div class="img">
+        <img src="${a.myImg}" alt="" srcset="">
+    </div>
+    <div class="txt">
+        <h4 class="title">${a.title}</h4>
+        <p class="cName">${a.channel}</p>
+        <p class="duration">${a.duration}</p>
+        <p class="views">${a.views}k</p>
+        <p class="old">${a.old}</p>
+    </div>
+</div>`
 
-    newDiv.setAttribute("class", "cards")
-
-    let txtNode = document.createElement('p')
-
-    txtNode.innerHTML = a.title
-
-    let txtNode1 = document.createElement('p')
-
-    txtNode1.innerHTML = a.channel
-
-    let txtNode2 = document.createElement('p')
-
-    txtNode2.innerHTML = `${a.views}k`
-
-    let txtNode3 = document.createElement('p')
-
-    txtNode3.innerHTML = `${a.duration}`
-
-    let txtNode4 = document.createElement('p')
-
-    txtNode4.innerHTML = `${a.old}`
-
-
-    newDiv.appendChild(txtNode)
-
-    newDiv.appendChild(txtNode1)
-
-    newDiv.appendChild(txtNode2)
-
-    newDiv.appendChild(txtNode3)
-
-    newDiv.appendChild(txtNode4)
-
-    mainDiv.appendChild(newDiv)
+    
+    mainDiv.innerHTML = mainDiv.innerHTML + html
 
 
 
 
-
-
-
-    // FOR IMAGE
-
-    let newImg = document.createElement("img")
-
-    newImg.setAttribute("src", a.myImg)
-
-
-    newDiv.appendChild(newImg)
 
 
 
@@ -67,7 +35,7 @@ let userInput = () => {
 
     let channel = prompt("Enter ur Channel name: ")
 
-    let views = Number (prompt("Enter Numb of Views: "))
+    let views = Number(prompt("Enter Numb of Views: "))
 
     let duration = prompt("Enter Duration of the video: ")
 
@@ -78,10 +46,10 @@ let userInput = () => {
 
     return {
         title: title,
-        channel : channel,
-        views : views,
-        duration : duration,
-        old : old,
+        channel: channel,
+        views: views,
+        duration: duration,
+        old: old,
         myImg: myImg
     }
 }
