@@ -72,7 +72,7 @@ let promp2 = new Promise ((resolve, reject)=>{
     let rand = Math.ceil(Math.random()*100)
     console.log(rand)
     if (rand >  50) {
-        setTimeout(resolve("SAQIB Second"),3000)
+        setTimeout(()=>resolve("SAQIB Second"),3000)
     } else {
         reject("SAQIB")
     }
@@ -83,7 +83,7 @@ let promp3 = new Promise ((resolve, reject)=>{
     let rand = Math.ceil(Math.random()*100)
     console.log(rand)
     if (rand >  50) {
-        setTimeout(resolve("SAQIB Third"),3000)
+        setTimeout(()=>resolve("SAQIB Third"),3000)
     } else {
         reject("SAQIB")
     }
@@ -91,12 +91,14 @@ let promp3 = new Promise ((resolve, reject)=>{
 })
 
 // let promise4 = Promise.all([promp2,promp3])
-// let promise4 = Promise.allSettled([promp2,promp3])
+let promise4 = Promise.allSettled([promp2,promp3])
 // let promise4 = Promise.race([promp2,promp3])
-let promise4 = Promise.any([promp2,promp3])
+// let promise4 = Promise.any([promp2,promp3])
 
 
-promise4.then(resolve).catch(reject)
+promise4.then((values)=>{
+    values.forEach(resolve)
+}).catch(reject)
 
 
 
