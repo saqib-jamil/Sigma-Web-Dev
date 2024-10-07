@@ -29,4 +29,3 @@ let myFunc = () => {
     console.log(newName)
 
 }
-myFunc()
