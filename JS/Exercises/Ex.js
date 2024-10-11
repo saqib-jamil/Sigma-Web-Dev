@@ -60,8 +60,86 @@ while (newUser != game[rand]) {
     }
 }
 
-*/
+
 
 
 //  Q3: TELL ME A JOKE
+
+//  With GPT
+let getJokes = async (url) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
+
+            const json = await response.json();
+            console.log(json);
+
+            resolve(json); // Properly resolve with the fetched data
+        } catch (error) {
+            reject(error); // Reject in case of an error
+        }
+    });
+};
+
+let url = `https://official-joke-api.appspot.com/random_ten`;
+
+(async () => {
+    let mainDiv = document.querySelector(".main");
+    let para = document.createElement("p");
+    para.setAttribute("class", "jokes");
+
+    try {
+        let jokeData = await getJokes(url);
+        jokeData.map((val, index) => {
+            console.log(val, index);
+            let {setup, punchline} = val;
+            para.innerHTML = `${setup}  ${punchline}`; // Assuming the API returns an array of jokes
+        })
+    } catch (error) {
+        para.innerHTML = `Error: ${error.message}`;
+    }
+
+    mainDiv.appendChild(para);
+})();
+
+//   MY OWN CODE
+
+
+let getJokes = async (url) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            const response = await fetch(url);
+            const json = await response.json();
+            console.log(json);
+            resolve(json); // Properly resolve with the fetched data
+        } catch (error) {
+            reject(error); // Reject in case of an error
+        }
+    });
+};
+
+let url = `https://official-joke-api.appspot.com/random_ten`;
+
+(async () => {
+    let mainDiv = document.querySelector(".main");
+    let para = document.createElement("p");
+    para.setAttribute("class", "jokes");
+
+
+    let jokeData = await getJokes(url);
+    jokeData.map((val, index) => {
+        console.log(val, index);
+        let { setup, punchline } = val;
+        para.innerHTML = `${setup}  ${punchline}`; // Assuming the API returns an array of jokes
+    })
+
+
+    mainDiv.appendChild(para);
+})();
+*/
+
+//  Q4: DIGITAL CLOCK
 
